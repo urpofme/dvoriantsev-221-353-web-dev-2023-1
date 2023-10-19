@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    font-size: 1.25rem;
+    position: relative;
+    min-height: 100vh;
+}
+
+body::after {
+    content: "";
+    display: block;
+    height: 68px;
+}
+
+.header {
+    background-color: lightgray;
+    padding: 1.25rem 0;
+    border-bottom: 5px solid #0885c6;
+    position: sticky;
+    top: 0;
+}
+
+.main-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+.profile {
+    float: right;
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.header a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.main-menu li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.container {
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+.page-content products-header {
+    margin: 0;
+}
+
+.page-content {
+    padding: 1rem;
+    margin-left: 240px;
+}
+
+
+.sidebar {
+    float: left;
+    width: 240px;
+    padding: 1rem;
+    box-sizing: border-box;
+    position: sticky;
+    top: 68px;
+}
+
+.btn {
+    background-color: #0885c6;
+    color: white;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.product-card {
+    height: 21.8rem;
+    width: 31rem;
+    border: 2px solid #0885c6;
+    background-color: rgb(240,240, 240);
+    display: inline-block;
+    border-radius:  5px;
+    margin: 0 0.625rem 0.625rem 0;
+}
+
+.product-details header {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.product-image {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+.product-image img {
+    height:  100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.product-info {
+    text-align: justify;
+    font-size: 1.125rem;
+    height: 65%;
+}
+
+.product-details {
+    float: right;
+    height: 100%;
+    width: 50%;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.price {
+    background-color: #333;
+}
+
+.buy {
+    background-color: #0885c6;
+}
+
+.footer {
+    background-color: lightblue;
+    padding: 1.25rem 0;
+    border-top: 5px solid blue;
+    font-weight: bold;
+}
+
+.scroll-top-btn {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 10;
+}
